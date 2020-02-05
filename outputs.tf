@@ -1,3 +1,8 @@
+output "with_computed_eip_address" {
+   description = "The elastic ip address."
+   value       = alicloud_eip.with_computed.*.ip_address
+}
+
 #################
 # EIP
 #################
